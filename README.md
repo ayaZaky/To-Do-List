@@ -1,4 +1,4 @@
-![todo](https://github.com/user-attachments/assets/8ca93ebb-a6d4-4238-80a4-67f1e7697aa1)# To-Do List 📝
+# To-Do List 📝
 
 A simple and interactive To-Do List application built with HTML, CSS, and JavaScript.
 ---
@@ -43,16 +43,6 @@ To-Do List
 ### Task Completed 
 ![todo](https://github.com/user-attachments/assets/9f45e7d3-2e86-4303-8761-66868645ad0b)
 
---- 
-
-## Contributing
-
-Feel free to contribute to this project by submitting issues or pull requests. 
- 
-
-
-
- 
 --- 
 
 ## Contributing

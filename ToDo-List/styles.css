@@ -1,0 +1,185 @@
+﻿
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #abbaab;  
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab); 
+    background: linear-gradient(to right, #ffffff, #abbaab);  
+
+    color: #333;
+    padding: 20px;
+}
+
+h1 {
+    color: #566d4e;
+    margin: 50px;
+    font-family: 'Comic Sans MS';
+    font-size: 70px;
+}
+
+.task-input {
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+input[type="text"] {
+    padding: 11px;
+    width: 450px;
+    border: 1px solid #566d4e;
+    border-radius: 5px;
+    font-family: 'Comic Sans MS';
+    color: #324c2a;
+}
+
+#task:focus {
+    border: 2px solid #566d4e;
+    outline: none;
+    box-shadow: 0 0 5px #566d4e;
+}
+
+button {
+    padding: 13px 18px;
+    background-color: #566d4e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #435b38;
+    }
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: white;
+    margin: 5px auto;
+    padding: 8px;
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #324c2a;
+    font-family: 'Comic Sans MS';
+}
+
+    li.completed {
+        color: gray;
+        background-color: #F0FFF0;
+    }
+
+        li.completed .task-content {
+            text-decoration: line-through;
+        }
+
+.task-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.task-icons {
+    display: flex;
+    gap: 10px;
+}
+
+    .task-icons .delete-icon {
+        color: indianred;
+        cursor: pointer;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .task-icons .edit-icon {
+        color: green;
+        cursor: pointer;
+        padding-left: 5px;
+    }
+
+li .edit-input {
+    width: 280px;
+    padding: 5px;
+    font-size: 15px;
+    border-color: darkgreen;
+    border-radius: 4px;
+}
+
+    li .edit-input:focus {
+        border: 1px solid #566d4e;
+        outline: none;
+        box-shadow: 0 0 5px #566d4e;
+    }
+/* Styling for the custom checkbox */
+.task-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid darkgreen;
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    border-radius: 5px;
+}
+
+    /* Custom checked state */
+    .task-checkbox:checked {
+        background-color: #F0FFF0;
+        border-color: darkgreen;
+    }
+
+        /* Create a tick mark when checked */
+        .task-checkbox:checked::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: darkgreen;
+            position: absolute;
+            font-size: 22px;
+            left: 3px;
+            bottom: 0px;
+        }
+
+#alertMessage {
+    display: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    display: none;
+    z-index: 1000;
+    font-size: 16px;
+}
+
+    #alertMessage.show {
+        display: block;
+    }
+
+#datetime {
+    color: #566d4e;
+    font-family: 'Comic Sans MS';
+}
